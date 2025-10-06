@@ -15,8 +15,6 @@ CREATE PLUGGABLE DATABASE mu_pdb_27906
 ADMIN USER mushi_plsqlauca_27906 IDENTIFIED BY 1234
 FILE_NAME_CONVERT=('C:\APP\ORACLE\ORADATA\XE\PDBSEED\',
                   'C:\APP\ORACLE\ORADATA\XE\MU_PDB_27906\');
-
-ALTER PLUGGABLE DATABASE mu_pdb_27906 OPEN;
 ```
 
 ![mu_pdb_27906 creation](./screenshots/mu_pdb_27906.png)
@@ -39,7 +37,6 @@ FILE_NAME_CONVERT=('C:\APP\ORACLE\ORADATA\XE\PDBSEED\',
 
 ```sql
 -- Deletion
-ALTER PLUGGABLE DATABASE mu_to_delete_pdb_27906 CLOSE;
 DROP PLUGGABLE DATABASE mu_to_delete_pdb_27906 INCLUDING DATAFILES;
 ```
 ![mu_to_delete_pdb_27906 deletion](./screenshots/dropping_the_pdb.png)
