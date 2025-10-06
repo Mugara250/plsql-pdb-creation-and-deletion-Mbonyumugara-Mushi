@@ -12,7 +12,7 @@ This assignment involved working with Oracle Database to create and manage Plugg
 **Commands Executed:**
 ```sql
 CREATE PLUGGABLE DATABASE mu_pdb_27906
-ADMIN USER mushi_pleglauca_27906 IDENTIFIED BY password123
+ADMIN USER mushi_plsqlauca_27906 IDENTIFIED BY 1234
 FILE_NAME_CONVERT=('C:\APP\ORACLE\ORADATA\XE\PDBSEED\',
                   'C:\APP\ORACLE\ORADATA\XE\MU_PDB_27906\');
 
@@ -30,7 +30,7 @@ ALTER PLUGGABLE DATABASE mu_pdb_27906 OPEN;
 ```sql
 -- Creation
 CREATE PLUGGABLE DATABASE mu_to_delete_pdb_27906
-ADMIN USER mushi_delete_27906 IDENTIFIED BY password123
+ADMIN USER mushi_plsqlauca_27906 IDENTIFIED BY 1234
 FILE_NAME_CONVERT=('C:\APP\ORACLE\ORADATA\XE\PDBSEED\',
                   'C:\APP\ORACLE\ORADATA\XE\MU_TO_DELETE_PDB_27906\');
 ```
